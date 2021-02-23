@@ -172,7 +172,7 @@ h1 {
     visibility: visible;
     border: 2px solid white;
     color:white;
-    padding: 3px 0;
+    padding: 5px 0;
 }
 
 .question input[type='radio']:after {
@@ -184,7 +184,7 @@ h1 {
     background-color: #fff;
     display: inline-block;
     visibility: visible;
-      padding: 3px 0;
+      padding: 5px 0;
 
 }
 
