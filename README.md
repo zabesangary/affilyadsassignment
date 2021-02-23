@@ -1,2 +1,2 @@
 # affilyadsassignment
-This is a test
+Run npm install 
