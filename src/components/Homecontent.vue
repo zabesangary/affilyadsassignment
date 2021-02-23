@@ -247,7 +247,7 @@ hr {
     border-radius:50%;
     left: 18px;
     position: relative;
-    background: rgb(2,0,36);
+    background: #4568d1;
     display: inline-block;
     visibility: visible;
     border-width: medium;
