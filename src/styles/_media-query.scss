@@ -1,26 +1,26 @@
 /* Smartphones (portrait and landscape) ----------- */
-@mixin portrait-landscape-phone {
-@media only screen
-and (min-device-width : 320px)
-and (max-device-width : 480px) {
-/* Styles */
- }
+@mixin phone {
+  @media only screen
+  and (min-device-width : 320px)
+  and (max-device-width : 480px) {
+  /* Styles */
+  @content;
+  }
 }
 
+
 /* Smartphones (landscape) ----------- */
-@mixin landscape-phone
 @media only screen
 and (min-width : 321px) {
 /* Styles */
 }
 
 /* Smartphones (portrait) ----------- */
-@mixin screen-portrait {
 @media only screen
 and (max-width : 320px) {
 /* Styles */
-  }
 }
+
 /* iPads (portrait and landscape) ----------- */
 @media only screen
 and (min-device-width : 768px)

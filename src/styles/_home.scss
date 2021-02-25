@@ -1,18 +1,28 @@
 @import "./src/styles/_variables.scss";
-@import "./src/styles/_mixins";
+@import "./src/styles/_media-query";
 
 h1 {
     width: 268px;
     margin: 0 auto;
     margin-top: 117px;
-    color: white;
+    color: $white;
     font-weight: 900;
     font-size: 27px;
+    @include phone {
+      width: 185px;
+      top: 20px;
+      position: relative;
+    float: left;
+    font-size: 22px;
+    }
 }
 
 .main-form {
     width: 480px;
-    color: white;
+    color: $white;
+  @include phone {
+    width: 300px;
+  }
 }
 
 
@@ -79,6 +89,9 @@ h1 {
     label {
       margin-top: 5px;
     }
+    @include phone {
+      margin-top: 13px;
+    }
 }
 
 
@@ -88,6 +101,19 @@ h1 {
     flex-direction: row;
     display: inline-flex;
     margin: 14px 0 0 0;
+
+    @include phone {
+      width: 380px;
+    background-color: #ebf8ff;
+    display: flex;
+    top: -732px;
+    right: 70px;
+    position: relative;
+    color: black;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    }
 }
 hr {
     width: 100%;
@@ -187,14 +213,19 @@ input:focus, textarea:focus, select:focus {
 
 .banner-img #img2 img {
     position: absolute;
-    width: 150px !important;
-    width: 181px;
+    width: 150px;
+
     bottom: 95px;
     right: 80px;
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
- transform: translate3d(0, 0, 0);
- backface-visibility: hidden;
- perspective: 1000px;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    @include phone {
+      width: 110px;
+      top: 130px;
+      right: 20px;
+    }
 }
 @keyframes shake {
   10%, 90% {
