@@ -1,5 +1,6 @@
-@import "./src/styles/_variables.scss";
+@import "./src/styles/_variables";
 @import "./src/styles/_media-query";
+@import "./src/styles/_general";
 
 h1 {
     width: 268px;
@@ -18,10 +19,22 @@ h1 {
 }
 
 .main-form {
-    width: 480px;
-    color: $white;
+  width: 480px;
+  color: $white;
+  background-color: #5088e4;
+  top: 80px;
+  left: 50px;
+  position: relative;
+  border-radius: 10px;
+  & label {
+      font-size: 12px;
+  }
+
   @include phone {
-    width: 300px;
+    width: 310px;
+    top: -210px;
+    left: 20px;
+    position: relative;
   }
 }
 
@@ -104,15 +117,15 @@ h1 {
 
     @include phone {
       width: 380px;
-    background-color: #ebf8ff;
-    display: flex;
-    top: -732px;
-    right: 70px;
-    position: relative;
-    color: black;
-    margin: 0 auto;
-    text-align: center;
-    justify-content: center;
+      background-color: #ebf8ff;
+      display: flex;
+      top: -292px;
+      right: 39px;
+      position: relative;
+      color: black;
+      margin: 0 auto;
+      text-align: center;
+      justify-content: center;
     }
 }
 hr {
@@ -209,6 +222,13 @@ input:focus, textarea:focus, select:focus {
 .banner-img img {
     width: 400px;
     height: auto;
+    @include phone {
+      width: 270px;
+  height: auto;
+  position: relative;
+  top: 800px;
+
+    }
 }
 
 .banner-img #img2 img {
@@ -245,16 +265,6 @@ input:focus, textarea:focus, select:focus {
   }
 }
 
-.main-form {
-    background-color: #5088e4;
-    top: 80px;
-    left: 50px;
-    position: relative;
-    border-radius: 10px;
-    & label {
-        font-size: 12px;
-    }
-}
 
 
 .birthday-form h6::before{
@@ -299,6 +309,9 @@ input:focus, textarea:focus, select:focus {
     top: 20px;
     left: 107px;
     position: relative;
+    @include phone {
+      left: 20px;
+    }
 
 }
   .birthday-form input {
@@ -320,12 +333,10 @@ input:focus, textarea:focus, select:focus {
     }
     &::before {
         content: url(../assets/privacy.svg);
-
-
         padding: 4px 4px 2px 5px;
-    border-radius: 50%;
-    background-color: white;
-    margin: 0 5px;
+        border-radius: 50%;
+        background-color: white;
+        margin: 0 5px;
     }
 }
 
@@ -335,15 +346,15 @@ label {
 .submit-button {
     margin: -21px 0 -0 0;
     input[type="submit" i] {
-      background: #0046a7;
-      color: $white;
-      border-radius: 25px;
-      border: none;
-      width: 250px;
-      padding: 20px;
-      margin-top: 20px;
-      font-weight: 700;
-      font-size: 0.7rem;
-      text-transform: uppercase;
+    background: #0046a7;
+    color: $white;
+    border-radius: 25px;
+    border: none;
+    width: 250px;
+    padding: 20px;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 0.7rem;
+    text-transform: uppercase;
     }
 }

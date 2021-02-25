@@ -1,0 +1,30 @@
+@import "./src/styles/_variables";
+@import "./src/styles/_mixins";
+@import "./src/styles/_media-query";
+
+footer {
+  color: #fff;
+  font-size: 11px;
+  text-align: center;
+  & p {
+    padding: 56px 133px 3px 172px;
+    @include phone {
+      margin-top: 160px;
+    padding: 0 20px;
+}
+
+
+  }
+}
+
+footer ul li {
+  display: inline;
+  position: relative;
+  list-style: none;
+  padding: 0 15px;
+  @include phone {
+    white-space: pre;
+    position: relative;
+    left: -30px;
+  }
+}

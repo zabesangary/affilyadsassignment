@@ -36,23 +36,4 @@
 <style lang="scss">
 
 
-.home {
-
-}
-footer {
-  color: #fff;
-  font-size: 11px;
-  text-align: center;
-  & p {
-    padding: 56px 133px 3px 172px;
-
-  }
-}
-
-footer ul li {
-  display: inline;
-  position: relative;
-  list-style: none;
-  padding: 0 15px;
-}
 </style>
