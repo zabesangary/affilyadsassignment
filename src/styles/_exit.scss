@@ -43,7 +43,7 @@ body {
       }
   }
   .main-exit {
-      background-color: #FEFAF6;
+      background-color: $creme;
       margin-top: -8px;
   }
 
@@ -58,7 +58,7 @@ body {
 
   .banner-exit p {
       padding: 10px 0px;
-      background: #F44336;
+      background: $red;
       color: white;
       font-weight: 700;
       margin: 20px -3px;
@@ -78,7 +78,7 @@ body {
   }
 
   .product {
-      background-color: #ffffff;
+      background-color: $white;
       background-repeat: no-repeat;
       background-position-x: center;
       background-size: cover;

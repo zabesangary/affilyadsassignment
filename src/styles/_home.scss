@@ -21,7 +21,7 @@ h1 {
 .main-form {
   width: 480px;
   color: $white;
-  background-color: #5088e4;
+  background-color: $light-blue;
   top: 80px;
   left: 50px;
   position: relative;
@@ -90,7 +90,7 @@ h1 {
     border-radius: 15px;
     top: -5px;
     position: relative;
-    background-color: #fff;
+    background-color: $white;
     display: inline-block;
     visibility: visible;
     padding: 5px 0;
@@ -203,7 +203,7 @@ input:focus, textarea:focus, select:focus {
     border-bottom: #cbd1e0 1px solid;
     width: 260px;
     padding: 10px 0;
-    color: #ffffff;
+    color: $white;
 }
 .email-input{
     background-image: url(../assets/envelope.svg);
