@@ -70,6 +70,5 @@
 </template>
 
 <style lang="scss" scoped>
-
 @import "./src/styles/_exit.scss";
 </style>

@@ -1,4 +1,5 @@
 @import "./src/styles/_variables.scss";
+@import "./src/styles/_mixins";
 
 body {
   font-family: 'Poppins', sans-serif;
@@ -117,3 +118,5 @@ body {
   footer {
      color: black;
   }
+
+   
